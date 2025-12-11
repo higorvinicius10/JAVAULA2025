@@ -77,7 +77,67 @@ public class Main {
         //ou//
         String minhaString = String.valueOf(meuInt2);
 
+        //Estrutura de dados//
 
+        //list = permite duplicatas//
+
+        List<String> list = new ArrayList<>();
+        list.add("Hello");
+        list.add("WORLD");
+        list.add("FERNANDA");
+        list.add("KIPPER");
+        list.add("KIPPER");
+        
+        //para retornar apenas 1 index//
+        System.out.println(list.get(1));
+       
+        //para consultar lista inteira//
+        System.out.println("List" + list);
+
+
+        //lista de sets = não permite duplicata//
+
+        Set<String> setStrings = new HashSet<>();
+        setStrings.add("Higor");
+        setStrings.add("Donald");
+        setStrings.add("Obama");
+        setStrings.add("Obama"); // String duplicata NÃO IRÁ SER RETORNADO//
+
+        System.out.println("setStrings:" + setStrings);
+       
+       //para verificar se contem ou não o valor X especificado//
+        System.out.println("set: " + setStrings.contains("Higor"));
+
+        //MAP = aponta sempre o proximo valor//
+
+        Map<String,String> map = new HashMap<>();
+        map.put("Name", "Higor");
+        map.put("Surname", "Kipper");
+       
+        //acionando index//
+        System.out.println(map.get("Name"));
+
+        // QUEUE: aponta para o proximo valor ou anterior //
+        Queue<String> queue = new LinkedList<>();
+        queue.add("vinicius");
+        queue.add("Santos");
+       
+        //para printar a fila completa//
+        System.out.println("Queue " + queue);
+
+        //para remover o primeiro valor da fila//
+        //caso seja usado 2x vai remover o objeto na ordem da fila//
+        System.out.println("Queue " + queue.poll());
+
+        //para retornar o primeiro valor da fila
+        System.out.println("Queue " + queue.peek());
+
+        //recuperar e remover a cabeça da fila
+        System.out.println("Queue " + queue.remove());
+
+        //ver a fila com valor atual//
+        System.out.println("Queue " + queue);
+        
 
     }
 }
