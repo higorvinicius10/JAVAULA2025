@@ -4,19 +4,19 @@ public class Main {
     public static void main(String[] args) {
 
         //para numeros inteiros//
-        int minhaIdade = 22;
+        int myAGE = 22;
 
         //para escritas//
-        String meuNome = "Higor Vinicius";
+        String MyName = "Higor Vinicius";
 
         //para nunca precisar declarar variavel//
-        var MeuVeiculo = "Ford mustang";
+        var myVehicle = "Ford mustang";
 
         //para numeros não inteiros//
-        double meuNumero = 10.0;
+        double MyNumber = 10.0;
 
         //para apenas uma letra escrita//
-        char primeiro = 'A';
+        char First = 'A';
 
         //para verdadeiro ou falso//
         boolean bool = true;
@@ -89,6 +89,7 @@ public class Main {
         list.add("KIPPER");
         //para retornar apenas 1 index//
         System.out.println(list.get(1));
+      
         //para consultar lista inteira//
         System.out.println("List" + list);
 
